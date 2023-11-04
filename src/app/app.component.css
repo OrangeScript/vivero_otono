@@ -1,0 +1,22 @@
+.text-div {
+  text-align: center;
+}
+
+.text-div h1 {
+
+}
+
+hr {
+  min-width: 320px;
+  max-width: 1000px;
+}
+
+.main-image-dive {
+  text-align: center;
+}
+
+.main-image {
+  min-width: 320px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
