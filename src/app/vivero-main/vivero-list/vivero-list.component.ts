@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Plants } from '../plants';
+import { ViveroService } from '../vivero.service';
 
 @Component({
   selector: 'app-vivero-list',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViveroListComponent implements OnInit {
 
-  constructor() { }
+  plantas: Array<Plants> = []
+
+  constructor(private viveroService: ViveroService) { }
+
+  getPlants(): void {
+    this.viveroService.getPlants().subscribe((plantas) => {
+      this.plantas = plantas;
+    })
+  }
 
   ngOnInit() {
+    this.getPlants();
   }
 
 }

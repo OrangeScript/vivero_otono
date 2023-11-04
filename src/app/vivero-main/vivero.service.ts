@@ -9,7 +9,7 @@ import { environment } from 'src/environments/environment';
 })
 export class ViveroService {
 
-  private apiUrl: string = environment.baseUrl
+  private apiUrl: string = environment.baseUrl;
 
   constructor(private http: HttpClient) { }
 
