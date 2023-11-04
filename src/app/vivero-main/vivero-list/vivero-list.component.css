@@ -1,3 +1,38 @@
+* {
+  font-family: sans-serif;
+}
+
 .container-fluid {
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  max-width: 1000px;
+}
+
+.info-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  height: 30px;
+  width: 150px;
+  color: white;
+  background-color: black;
+}
+
+.id {
+  width: 50px;
+  font-weight: bold;
+}
+
+td {
+  height: 25px;
+}
+
+.extra-info {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 320px;
+  max-width: 1000px;
 }
