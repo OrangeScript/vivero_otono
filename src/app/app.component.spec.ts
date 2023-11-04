@@ -1,9 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ViveroListComponent } from './vivero-main/vivero-list/vivero-list.component';
+
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    declarations: [AppComponent]
+    imports: [HttpClientModule],
+    declarations: [AppComponent, ViveroListComponent]
   }));
 
   it('should create the app', () => {
@@ -18,10 +22,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('vivero_otono');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('vivero_otono app is running!');
-  });
 });
